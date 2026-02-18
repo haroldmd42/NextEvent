@@ -1,0 +1,13 @@
+.btn-main {
+  background: linear-gradient(90deg, var(--color-primary),VAR(--color-font-primary));
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-main:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}

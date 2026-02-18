@@ -1,0 +1,53 @@
+.lights {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none; /* importante */
+}
+
+.light {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+}
+
+/* Colores NexEvent */
+.light-1 {
+  background: #2563EB;
+  top: 10%;
+  left: 10%;
+  animation: move1 22s infinite alternate ease-in-out;
+}
+
+.light-2 {
+  background: #7C3AED;
+  top: 60%;
+  left: 70%;
+  animation: move2 28s infinite alternate ease-in-out;
+}
+
+.light-3 {
+  background: #06B6D4;
+  top: 40%;
+  left: 30%;
+  animation: move3 26s infinite alternate ease-in-out;
+}
+
+@keyframes move1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(150px, -100px) scale(1.2); }
+}
+
+@keyframes move2 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-120px, 140px) scale(0.9); }
+}
+
+@keyframes move3 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(100px, 120px) scale(1.1); }
+}
