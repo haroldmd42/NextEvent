@@ -1,6 +1,7 @@
 import "./Home.css";
 import heroImg from "../../assets/fondo.png";
 import AnimatedLights from "../../components//AnimateLights/AnimateLights";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -23,13 +24,13 @@ export default function Home() {
         </p>
 
         <div className="mt-4">
-          <button className="btn btn-main btn-lg me-3 text-white">
+          <Link to="/events" className="btn btn-main btn-lg me-3 text-white">
             Explorar Eventos
-          </button>
+          </Link>
 
-          <button className="btn  btn-lg text-dark">
+          <Link to="/create-event" className="btn  btn-lg">
             Crear Evento
-          </button>
+          </Link>
         </div>
       </div>
     </section>
